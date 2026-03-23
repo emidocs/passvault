@@ -1,4 +1,4 @@
-package com.example.localdbase
+package com.example.passvault
 
 import android.content.ContentValues
 import android.content.Context

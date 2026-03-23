@@ -1,29 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:tools="http://schemas.android.com/tools"  xmlns:android="http://schemas.android.com/apk/res/android"  android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/purple"
-    tools:context=".HomeScreen">
+    android:background="@color/black"
+    android:padding="20dp">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Home Screen"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:text="Welcome to Your Vault"
         android:gravity="center"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/etPlatform"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Platform (e.g., Student Portal)"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etVaultUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Username"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etVaultPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Password to Save"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSaveToVault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENCRYPT AND SAVE TO VAULT"
+        android:layout_marginTop="20dp"/>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Result Will Appear Here"
-        android:layout_gravity="center"
+        android:text=""
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textSize="18sp"
         android:textColor="@color/white"/>
+
 </LinearLayout>
