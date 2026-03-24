@@ -24,6 +24,7 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Platform (e.g., Student Portal)"
+        android:textColorHint="@color/black"
         android:layout_marginTop="30dp"
         android:padding="10dp"/>
 
@@ -34,6 +35,7 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Username"
+        android:textColorHint="@color/black"
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
 
@@ -44,6 +46,7 @@
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Password to Save"
+        android:textColorHint="@color/black"
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
 

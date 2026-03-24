@@ -21,7 +21,9 @@
         android:layout_height="50dp"
         android:background="@color/white"
         android:textColor="@color/black"
-        android:hint="Please Enter Your Name"  android:layout_margin="20dp"
+        android:hint="Please Enter Your Name"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
         android:gravity="center"
         />
     <EditText
@@ -30,7 +32,9 @@
         android:layout_height="50dp"
         android:background="@color/white"
         android:textColor="@color/black"
-        android:hint="Please Enter Your Password"  android:layout_margin="20dp"
+        android:hint="Please Enter Your Password"
+        android:textColorHint="@color/black"
+        android:layout_margin="20dp"
         android:gravity="center"
         />
     <Button
