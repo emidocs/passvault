@@ -19,7 +19,8 @@
         android:id="@+id/eTName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/black"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:hint="Please Enter Your Name"  android:layout_margin="20dp"
         android:gravity="center"
         />
@@ -27,7 +28,8 @@
         android:id="@+id/eTPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/black"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:hint="Please Enter Your Password"  android:layout_margin="20dp"
         android:gravity="center"
         />
