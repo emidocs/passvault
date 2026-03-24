@@ -21,7 +21,7 @@
         android:id="@+id/etPlatform"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@color/black"
         android:hint="Platform (e.g., Student Portal)"
         android:layout_marginTop="30dp"
         android:padding="10dp"/>
@@ -30,7 +30,7 @@
         android:id="@+id/etVaultUsername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@color/black"
         android:hint="Username"
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
@@ -39,7 +39,7 @@
         android:id="@+id/etVaultPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/white"
+        android:background="@color/black"
         android:hint="Password to Save"
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
