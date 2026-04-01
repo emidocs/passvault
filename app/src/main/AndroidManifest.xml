@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Passvault">
         <activity
+            android:name=".VaultActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
             android:exported="false" />
         <activity

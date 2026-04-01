@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:padding="20dp">
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:gravity="center"
+    android:fitsSystemWindows="true">
 
     <TextView
         android:id="@+id/textView"
@@ -12,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="Welcome to Your Vault"
         android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
@@ -21,50 +23,78 @@
         android:id="@+id/etPlatform"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Platform (e.g., Student Portal)"
-        android:textColorHint="@color/black"
-        android:layout_marginTop="30dp"
+        android:textColorHint="#888888"
         android:padding="10dp"/>
 
     <EditText
         android:id="@+id/etVaultUsername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Username"
-        android:textColorHint="@color/black"
+        android:textColorHint="#888888"
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="0dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#888888"
+        app:hintEnabled="false"
+        app:boxBackgroundMode="none"> <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etVaultPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/white"
         android:textColor="@color/black"
         android:hint="Password to Save"
-        android:textColorHint="@color/black"
-        android:layout_marginTop="15dp"
+        android:textColorHint="#888888"
+        android:inputType="textPassword"
         android:padding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSaveToVault"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ENCRYPT AND SAVE TO VAULT"
-        android:layout_marginTop="20dp"/>
+        android:backgroundTint="#2962FF"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnGoToVault"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="VIEW MY SECURE VAULT"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:textColor="@color/white"/>
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FF5252"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
 </LinearLayout>
